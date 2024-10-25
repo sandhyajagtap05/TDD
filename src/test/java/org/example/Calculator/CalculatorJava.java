@@ -26,4 +26,11 @@ public class CalculatorJava {
        int result= c.mul(4,2);
        assertEquals(8,result);
     }
+
+    @Test
+    public  void noIsPalindrom(){
+   Calculator c=new Calculator();
+  int result= c.palindrom(121);
+  assertEquals(121,result);
+    }
 }
