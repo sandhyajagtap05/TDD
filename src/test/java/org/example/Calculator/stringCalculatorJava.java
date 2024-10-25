@@ -2,6 +2,7 @@ package org.example.Calculator;
 
 import org.junit.jupiter.api.Test;
 
+import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertTrue;
 import static org.example.Calculator.stringCalculator.isvalidsname;
 //import static org.junit.jupiter.api.AssertTrue.assertTrue;
@@ -9,12 +10,12 @@ import static org.example.Calculator.stringCalculator.isvalidsname;
 public class stringCalculatorJava {
 
     @Test
-    public void name(){
-       String sname="sandhya";
-       assertTrue(isvalidsname(sname));
+    public void toUpperCase(){
+
+        stringCalculator c=new stringCalculator();
+        String s1=c.toUpperCase("sandhya");
+        assertEquals("SANDHYA",s1);
 
 
-       String sname1="sandhya jagtap";
-       assertTrue(isvalidsname(sname1));
     }
 }
