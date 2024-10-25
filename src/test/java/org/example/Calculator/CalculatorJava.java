@@ -19,4 +19,11 @@ public class CalculatorJava {
 //        int result=c.sub(4,2);
 //        assertEquals(2,result);
 //    }
+
+    @Test
+    public void testMultiplication(){
+        Calculator c=new Calculator();
+       int result= c.mul(4,2);
+       assertEquals(8,result);
+    }
 }
